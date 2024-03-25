@@ -1,0 +1,32 @@
+ion-card{
+    transition: .3s;
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+ion-card:hover{
+    background-color: var(--ion-color-primary-tint);
+    transition: .2s;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 2em var(--ion-color-primary-tint) );
+    opacity: 1;
+}
+
+ion-card:hover ion-card-title,
+ion-card:hover ion-card-subtitle {
+  color: black;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 98%;
+        height: 98%;
+    }
+}

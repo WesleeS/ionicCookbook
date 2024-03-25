@@ -108,6 +108,11 @@ ion-note {
   color: var(--ion-color-medium-shade);
 }
 
+ion-item:hover{
+  --color: var(--ion-color-primary-tint);
+}
+
 ion-item.selected {
-  --color: var(--ion-color-primary);
+  --color: rgba(var(--ion-color-primary), .5);
 } 
+
